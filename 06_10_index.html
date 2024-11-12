@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бойцовский клуб</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .thumbnail {
+            width: 100px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: antiquewhite;
+            background-size: cover;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Бойцовский клуб</h1>
+
+<nav>
+    <a href="#section1">Раздел 1</a>
+    <a href="#section2">Раздел 2</a>
+    <a href="./index.html">Первая страница</a>
+</nav>
+
+<section id="section1">
+    <h2>Раздел 1: Введение в бойцовский клуб</h2>
+    <ul>
+        <li>Что такое Бойцовский клуб?</li>
+        <li>История и философия</li>
+        <li>Основные идеи</li>
+    </ul>
+</section>
+
+<section id="section2">
+    <h2>Раздел 2: Основные принципы</h2>
+    <ol>
+        <li>Принцип 1: Не говорите о Бойцовском клубе</li>
+        <li>Принцип 2: Участие в боях</li>
+    </ol>
+</section>
+
+<h2>Изображения</h2>
+<img src="fight_club.jpg" alt="Thumbnail 1" class="thumbnail" onclick="openImage('fight_club.jpg')" />
+<img src="Taxi_Driver_poster.jpg" alt="Thumbnail 2" class="thumbnail" onclick="openImage('Taxi_Driver_poster.jpg')" />
+
+<script>
+function openImage(imageUrl) {
+    window.open(imageUrl, '_blank', 'width=600,height=400');
+}
+</script>
+
+<h2>Таблица с изображениями</h2>
+<table>
+    <tr>
+        <td><img src="soap.jpg" alt="Мыльцо" /></td>
+        <td><a href="https://mmk-soap.ru/">Фабрика мыла</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

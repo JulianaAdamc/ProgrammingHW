@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отправка данных заказа</title>
+</head>
+<body>
+    <h2>Отправка данных заказа</h2>
+    <a href="forms.html">Формы 1</a>
+    <a href="forms2.html">Формы 2</a>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <label for="item_name">Название товара:</label>
+        <input type="text" id="item_name" name="item_name" required><br><br>
+
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label>Доставка:</label>
+        <input type="radio" id="delivery_yes" name="delivery" value="yes">
+        <label for="delivery_yes">Да</label>
+        <input type="radio" id="delivery_no" name="delivery" value="no">
+        <label for="delivery_no">Нет</label><br><br>
+
+        <label for="gift_wrap">Подарочная упаковка:</label>
+        <input type="checkbox" id="gift_wrap" name="gift_wrap"><br><br>
+
+        <label for="order_date">Дата заказа:</label>
+        <input type="date" id="order_date" name="order_date" required><br><br>
+
+        <label for="password">Пароль для подтверждения:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="hidden" name="order_id" value="12345">
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

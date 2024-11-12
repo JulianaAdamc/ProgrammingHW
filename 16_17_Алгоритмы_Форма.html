@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p, label {
+            font-size: 18px;
+        }
+        #result {
+            font-weight: bold;
+            color: #007b00;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<a href="03_Решение_Алгоритмической_задачи.html">Назад</a>
+<h2>Описание и решение алгоритмической задачи</h2>
+<p>Задача 1002. Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+
+<form action="https://www.bing.com/search?" method="POST">
+    <label for="number">Введите вещественное число:</label><br>
+    <input type="number" id="number" name="number" step="any" required><br><br>
+
+    <button type="button" onclick="checkNumber()">Проверить</button><br><br>
+
+    <label for="taskDescription">Условие задачи:</label><br>
+    <input type="text" id="taskDescription" name="description" value="Задача 1002. Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль." readonly><br><br>
+
+    <label for="result">Решение задачи:</label><br>
+    <input type="text" id="result" name="result" readonly><br><br>
+
+    <input type="submit" value="Отправить на сервер">
+</form>
+
+<script>
+    function checkNumber() {
+        const number = parseFloat(document.getElementById('number').value);
+        let result;
+
+        if (number > 0) {
+            result = "Число положительное";
+        } else if (number < 0) {
+            result = "Число отрицательное";
+        } else {
+            result = "Число равно нулю";
+        }
+
+        document.getElementById('result').value = result;
+    }
+</script>
+
+</body>
+</html>

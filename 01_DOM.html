@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Считываем информацию из DOM</title>
+</head>
+<body>
+    <a href="01_DOM.html">Первое задание (DOM)</a>
+    <a href="02_Kirill.html">Второе задание (Кириллица)</a>
+    <a href="03_Решение_Алгоритмической_задачи.html">Алгоритмическая задача</a>
+    <h2>Вторая и третья страницы паспорта</h2>
+    
+    <p>Фамилия: <span>Юлиана</span></p>
+    <p>Имя: <span>Адамчук</span></p>
+    <p>Год рождения: <span>2004</span></p>
+    <img src="01_DOM.png">
+    <script>
+        console.log(document.getElementsByTagName('p')[0].childNodes[1].innerText); // Получает фамилию
+        console.log(document.getElementsByTagName('p')[1].childNodes[1].innerText); // Получает имя
+        console.log(document.getElementsByTagName('p')[2].childNodes[1].innerText); // Получает год рождения
+    </script>
+</body>
+</html>
