@@ -1,23 +1,47 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Считываем информацию из DOM</title>
+	<meta charset="utf-8">
+	<title>Паспорт</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100..900;900..100&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+
+<style>
+
+</style>
+
 </head>
 <body>
-    <a href="01_DOM.html">Первое задание (DOM)</a>
-    <a href="02_Kirill.html">Второе задание (Кириллица)</a>
-    <a href="03_Решение_Алгоритмической_задачи.html">Алгоритмическая задача</a>
-    <h2>Вторая и третья страницы паспорта</h2>
-    
-    <p>Фамилия: <span>Юлиана</span></p>
-    <p>Имя: <span>Адамчук</span></p>
-    <p>Год рождения: <span>2004</span></p>
-    <img src="01_DOM.png">
-    <script>
-        console.log(document.getElementsByTagName('p')[0].childNodes[1].innerText); // Получает фамилию
-        console.log(document.getElementsByTagName('p')[1].childNodes[1].innerText); // Получает имя
-        console.log(document.getElementsByTagName('p')[2].childNodes[1].innerText); // Получает год рождения
-    </script>
+
+<h1>Паспорт</h1>
+<div id="main_fon">
+
+   <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+   <div id="page_top">
+   <p class="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+   <p class="vidanstr2">ГОР. ТЮМЕНЬ</p>
+   <p class="vidanstrcode">630-002</p>
+   <img class="podpis1" src="podpis.png">
+
+</div>
+<div id="page_bottom">
+<img class="passfoto" src="foto.jpg" alt="me" width="15%">
+<p class="familia">АДАМЧУК</p>
+<p class="name">ЮЛИАНА</p>
+<p class="fname">ДМИТРИЕВНА</p>
+<p class="pol">ЖЕН.</p>
+<p class="hbordin">25.02.2005</p>
+<p class="hpborn1">ГОР. ТЮМЕНЬ</p>
+<p class="hpborn2">ТЮМЕНСКАЯ ОБЛ.</p>
+</div>
+</div>
+<script>
+    console.log(document.getElementsByTagName('p')[3].innerText); // Получает фамилию
+    console.log(document.getElementsByTagName('p')[4].innerText); // Получает имя
+    console.log(document.getElementsByTagName('p')[5].innerText); // Получает отчества
+</script>
 </body>
 </html>
+
